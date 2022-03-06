@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+body{
+    font: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(54, 53, 53);
+    color: #fff;
+}
+
+header{
+    text-align: center;
+    overflow: hidden;
+}
+header>img{
+    width: 10rem;
+    height: 10rem;
+}
+header>h1{
+    margin-bottom: 2rem;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+main{
+    margin-left: 16rem;
+    margin-right: 16rem;
+}
+section>h2{
+    font-weight: 500 ;
+    text-align: center;
+    font-size: 2rem;
+}
+section>p{
+    font-size: medium;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+ol{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 2em;
+    float: left;
+    
+
+
+}
+li{
+    width: 10rem;
+    height: 14.5rem;
+}
+a{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+a>p{
+    text-align: center;
+    color: #fff;
+    font-size:large;
+    font-weight: 500;
+    background-color: rgb(81, 130, 227);
+    padding: 0.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+section:nth-child(2){
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+li{
+    margin: 1em;
+}
+li>img{
+    width: 100%;
+}
+footer{
+    margin-top: 2rem;
+}
+footer>p{
+    text-align: center;
+}
