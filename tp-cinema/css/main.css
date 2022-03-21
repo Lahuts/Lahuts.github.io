@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("/asset/Gotham_Medium_Regular.ttf") format("truetype"),
+   }
 body{
     font: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -7,20 +12,38 @@ body{
     background-image: url(https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
 }
 
+
 header{
-    text-align: center;
     overflow: hidden;
 }
 header>a>img{
+    float: left;
     width: 10rem;
     height: 10rem;
+    padding-left: 2em;
+    padding-right: 1em;
 }
-header>h1{
+header>a>h1{
+    padding-left: 1em;
+    margin-top: 1em;
+    font-family: "Gotham";
     margin-bottom: 2rem;
     font-size: xx-large;
     font-weight: 700;
     color: #fff;
+    letter-spacing: 0.1em;
 }
+.bicolor{
+    color: #ff725c;
+    
+}
+header>h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #fff;
+}
+
 
 
 main{
@@ -47,6 +70,7 @@ section>ul{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(3,1fr);
+    gap: 1em;
 }
 h3{display: none;}
 figcaption>h3{
@@ -78,7 +102,7 @@ a>p{
     color: #fff;
     font-size:large;
     font-weight: 500;
-    background-color: rgba(255, 26, 18,1);
+    background-color: #ff725c;
     padding: 0.5em;
     padding-left: 5em;
     padding-right: 5em;

@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", e => {
         }
     }
 
-    let el = document.querySelector("section");
+    let el = document.querySelector("#grid");
     let ul = document.createElement("ul");
     el.appendChild(ul);
 
