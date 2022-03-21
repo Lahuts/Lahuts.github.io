@@ -1,0 +1,16 @@
+{
+"name": "tp-cinema",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
+"dependencies": {
+"babel-cli": "^6.26.0",
+"babel-preset-env": "^1.7.0"
+},
+"devDependencies": {},
+"scripts": {
+"build": "babel --no-babelrc src -w -d js --preset=env"
+},
+"author": "",
+"license": "ISC"
+}
