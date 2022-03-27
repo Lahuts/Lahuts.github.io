@@ -8,18 +8,28 @@ body{
 }
 header{
     overflow: hidden;
-    text-align: center;
+    background-color: #2c2c2cb2;
 }
-header>h1{
+header>a>img{
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+header>a>h1{
+    padding-left: 1em;
+    margin-top: 1em;
+    font-family: "Gotham";
+    margin-bottom: 2rem;
     font-size: xx-large;
     font-weight: 700;
     color: #fff;
+    letter-spacing: 0.1em;
 }
-
-header>a>img{
-
-    width: 10rem;
-    height: 10rem;
+.bicolor{
+    color: #ff725c;
+    
 }
 section:nth-child(1){
     overflow: hidden;
@@ -44,24 +54,35 @@ li>img{
     width: 100%;
 }
 section{
+    margin-top: 2em;
     overflow: hidden;
 }
 main{
     margin-left: 16rem;
     margin-right: 16rem;
 }
-form{
-    display: flex;
+fieldset legend{
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+fieldset{
+    border: solid .1rem #fff;
+    background-color: #74747496;
+    border-radius: .4rem;
+    padding: 2em;
+    margin: 0em 20em 0 20em;
+}
+fieldset form *{
+    display: block;
     width: 100%;
-    line-height: 4em;
-    flex-direction: column;
-    align-items: center;
+    line-height: 3.5rem;
+    margin-bottom: .5rem;
+}
+fieldset form label, fieldset small{
+    border: 0;
+}
 
-}
-form>h2{text-align: center;}
-label,select,input{
-    margin-left: 1rem;
-}
 label{
     display: block;
     font-size:medium;
@@ -71,17 +92,19 @@ h2{
     font-weight: 500;
 }
 input,select{
-    background-color: rgba(77, 75, 75, 0.748);
-    width: 35rem;
+    background-color: rgba(53, 53, 53, 0.748);
+
     height: 4rem;
     border-radius: 0.7rem 0.7rem 0.7rem 0.7rem;
     color:#fff;
     padding: 1em;
 }
 input:last-child{
+    border: 0;
     margin-top: 3rem;
     background-color: rgba(255, 26, 18,1);
     transition: background-color 0.5s;
+    padding: 0em;
 }
 input:last-child:hover{
     background-color: rgba(255, 26, 18, 0.5); ;

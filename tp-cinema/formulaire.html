@@ -6,41 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/car.css">
     <link rel="icon" type="favicon"  href="favicon/favicon.ico">
     <title>TP Cinema</title>
     
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="asset/logo.svg" alt="logo du site"></a>
-        <h1>Films , séries TV et bien plus en illimité !</h1>
+        <a href="index.html"><img src="asset/st_logo.svg" alt="logo du site">
+            <h1><span class="bicolor">STREA</span>MOW</h1>
+        </a>
     </header>
     <main>
         <section>
-            <ol>
-                <li><img src="asset/django.jpg" alt="affiche django"></li>
-                <li><img src="asset/django.jpg" alt="affiche django"></li>
-                <li><img src="asset/django.jpg" alt="affiche django"></li>
-                <li><img src="asset/django.jpg" alt="affiche django"></li>
-                <li><img src="asset/django.jpg" alt="affiche django"></li>
-            </ol>
+            <div id="carousel">
+                <div id="container">
+                </div>
+                <img src="asset/btn.png" alt="btn" class="btn" id="g">
+                <img src="asset/btn.png" alt="btn" class="btn" id="d">
+            </div>
         </section>
+        <fieldset>
+            <legend>Espace membre</legend>
+            <form action="index.html" method="post">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Nom" aria-required="true"  autofocus>
 
-        <form action="">
-            <h2>Remplissez le formulaire :</h2>
-            <label for="nom">Nom :</label>
-            <input type="text" name="nom">
-            <label for="prenom">Prénom :</label>
-            <input type="text"name=prenom>
-            <label for="email">Email :</label>
-            <input type="email" name="" id="">
-            <label for="pays">Pays :</label>
-            <select name="pays" id=""></select>
-            <label for="ville">Ville :</label>
-            <select name="ville" id=""></select>
-            <input type="button" value="Valider">
-        </form>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-required="true">
+
+                <label for="email">email</label>
+                <input type="email" id="email" name="email" placeholder="email" aria-required="true">
+    
+                <label for="Ville">Ville</label>
+                <input type="tel" id="Ville" name="Ville" aria-label="Votre ville" placeholder="ville" aria-required="true">
+
+                <label for="pays">Pays</label>
+                <input type="pays" id="pays" name="pays" aria-label="Votre Pays" placeholder="pays" aria-required="true">
+
+                <input id="btn-val" type="submit" value="Envoyer" aria-label="cliquez pour envoyer">
+            </form>
+            </fieldset>
     </main>
     <footer><p>@ - Streaming - 2022</p></footer>
+    <script src="js/car.js"></script>
 </body>
 </html>

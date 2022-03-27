@@ -1,0 +1,58 @@
+
+#carousel{
+    width: 80em;
+    position: relative;
+    overflow: hidden;
+    
+}
+#container{
+    
+    width: 90em;
+    transition: ease-in-out 0.5s;
+    
+}
+.grid-5{
+    display: inline-block;
+    width: 80em;
+}
+.grid-item{
+    display: inline-block;
+    width:fit-content;
+    height: fit-content;
+    margin: 0em;
+}
+
+.pic{
+    width: calc(70em/5);
+    border-radius: 10px 10px 15px 15px;
+
+}
+.grid-item>.pic:first-child{
+    margin-left: 1.7em;
+}
+.grid-item>.pic:nth-child(2),.grid-item>.pic:nth-child(4){
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.grid-item>.pic:hover{
+    opacity: 50%;
+    transition:ease-in-out 0.5s;
+}
+.btn{
+    position: absolute;
+    cursor: pointer;
+    width: 10em;
+    opacity: 0.6;
+    
+}
+#g{
+    top: 4em;
+    left: 1em;
+    transform:rotate(180deg);
+    
+}
+#d{
+    top: 4em;
+    right: 1em;
+    transform:rotate(0deg);
+}

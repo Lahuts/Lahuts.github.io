@@ -15,6 +15,7 @@ body{
 
 header{
     overflow: hidden;
+    background-color: #2c2c2cb2;
 }
 header>a>img{
     float: left;
@@ -37,7 +38,8 @@ header>a>h1{
     color: #ff725c;
     
 }
-header>h2{
+h2{
+    margin-top: 1em;
     text-align: center;
     font-size: xx-large;
     font-weight: 700;
@@ -55,7 +57,7 @@ p{
     margin-bottom: 1em;
 }
 
-section>h2{
+section>h3{
     font-weight: 500 ;
     text-align: center;
     font-size: 2rem;
@@ -72,10 +74,8 @@ section>ul{
     grid-template-rows: repeat(3,1fr);
     gap: 1em;
 }
-h3{display: none;}
 figcaption>h3{
-    margin-top: 0.5em;
-    text-align: center;
+    display:none;
 }
 
 li>figure>img{
@@ -118,3 +118,34 @@ footer{
 footer>p{
     text-align: center;
 }
+
+@media screen and (max-width: 900px) {
+
+    main{
+        margin:0em 1em 0em 1em;
+    }
+    header{
+        text-align: center;
+        background-color:#2c2c2cb2;
+    }
+    h2{
+        font-size: 3em;
+    }
+    section>ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 1em;
+    }
+    a>p{
+        text-align: center;
+        color: #fff;
+        font-size:large;
+        font-weight: 500;
+        background-color: #ff725c;
+        padding: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        transition: background-color 0.5s;
+    }
+  }
