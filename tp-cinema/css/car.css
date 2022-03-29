@@ -24,7 +24,7 @@
 
 .pic{
     width: calc(70em/5);
-    border-radius: 10px 10px 15px 15px;
+    border-radius: 10px 10px 10px 10px;
 
 }
 .grid-item>.pic:first-child{
@@ -34,10 +34,7 @@
     margin-left: 1em;
     margin-right: 1em;
 }
-.grid-item>.pic:hover{
-    opacity: 50%;
-    transition:ease-in-out 0.5s;
-}
+
 .btn{
     position: absolute;
     cursor: pointer;
@@ -46,13 +43,72 @@
     
 }
 #g{
-    top: 4em;
-    left: 1em;
-    transform:rotate(180deg);
+    top: 0em;
+    left: 1.65em;
+    transform:rotate(0deg);
     
 }
 #d{
-    top: 4em;
-    right: 1em;
-    transform:rotate(0deg);
+    top: .1em;
+    right: 1.4em;
+    transform:rotate(180deg);
+}
+
+ /* btn Next */
+.next {
+    position: absolute;
+    width: 3.2em;
+    height: 21em;
+    opacity: 1;
+    z-index: 1;
+    background-color: rgba(63, 63, 63, 0.452);
+    border-radius:  1em 0em 0 1em ;
+
+
+    
+  }
+  .next:hover {
+    opacity: 0.5;
+    transition: ease-in-out 0.3s;
+  }
+  .next:before, .next:after {
+    position: absolute;
+    left: 1.5em;
+    content: ' ';
+    height: 3.3em;
+    width: 0.2em;
+    background-color: #fff;
+    
+  }
+  .next::before{
+    transform: rotate(20deg);
+    top : 7.35em;
+  }
+  .next:after{
+      bottom : 7.35em;
+    transform: rotate(-20deg);
+  }
+ 
+  /* Resp à revoir */
+  @media screen and (max-width: 843px) {
+    .btn,.grid-5>li:nth-child(5),.grid-5:nth-child(2),.grid-5:nth-child(3){
+        display: none;
+    }
+    main{
+        margin: 0%;
+    }
+   
+    .grid-5{
+        width:fit-content;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 1em;
+        padding: 2em;
+    }
+    .pic{
+        margin-left:0em;
+    }
+
+
 }
