@@ -25,9 +25,8 @@ document.addEventListener("DOMContentLoaded", e => {
     }, {
 
         title: "Joker",
-        date_de_sortie: "9 Octobre 2019",
+        date: "2019",
         type: "thriller",
-        duree: "2h2",
         acteurs: "Joaquin Phoenix",
         director: "Todd Phillips",
         image: "https://www.themoviedb.org/t/p/w1280/dCp0auHcFum1g6N1YSMLQmyVCT6.jpg",
@@ -35,7 +34,7 @@ document.addEventListener("DOMContentLoaded", e => {
     }, {
 
         title: "Batman",
-        date: "",
+        date: "2022",
         type: "Super héros",
         duree: "2h55",
         acteurs: "Robert Pattinson",
