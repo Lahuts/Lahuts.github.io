@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", e => {
-  // pensez a modifier hover.js pour que ce code fonctionne
   // Modal windows of the movies on the home page
 
   console.log(navigator.userAgent);
@@ -26,9 +25,9 @@ document.addEventListener("DOMContentLoaded", e => {
     /* sélectionner les sélecteurs html*/
     document.querySelector(".fr-modal iframe").src = trailer;
     document.querySelector(".modal-info h3").innerText = title;
-    document.querySelector(".modal-info .li1").innerText = "Réalisateur : " + director;
-    document.querySelector(".modal-info .li2 ").innerText = "Genre : " + type;
-    document.querySelector(".modal-info li time").innerText = "Date de sortie : " + date;
+    document.querySelector(".modal-info li:nth-child(1)").innerText = "Réalisateur : " + director;
+    document.querySelector(".modal-info li:nth-child(2) ").innerText = "Genre : " + type;
+    document.querySelector(".modal-info li:nth-child(3)").innerText = "Date de sortie : " + date;
   };
   for (rows of el) {
     rows.addEventListener("click", open_modal);

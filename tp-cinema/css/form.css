@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
-@font-face {
-    font-family: "Gotham";
-    src: url("/asset/Gotham_Medium_Regular.ttf") format("truetype");
-  }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 body{
     font: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -23,17 +20,16 @@ header>a>img{
 }
 header>a>h1{
     padding-left: 1em;
-    margin-top: 3%;
-    font-family: "Gotham";
-    margin-bottom: 0rem;
+    margin-top: 1.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 2rem;
     font-size: xx-large;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.1em;
 }
-.bicolor{
-    color: #ff725c;
-    
+.bicolor {
+  color: #ff725c;
 }
 section:nth-child(1){
     overflow: hidden;
@@ -107,3 +103,8 @@ footer>p{
     text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+    header{
+        text-align: center;
+    }
+}

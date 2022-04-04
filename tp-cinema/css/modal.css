@@ -59,7 +59,9 @@
     opacity: 1;
     transform-origin: center center;
 }
-
+iframe{
+    border:0;
+}
 /* Test */
 .close {
     position: absolute;
