@@ -117,4 +117,7 @@ footer>p{
     header{
         text-align: center;
     }
+    #container{
+        transform: translate(9%, 0);
+    }
 }
