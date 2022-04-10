@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", e => {
 document.addEventListener("DOMContentLoaded", e => {
   console.log(navigator.userAgent);
 
-  let el, modal, closed, open_modal, closed_all, footer_right;
+  let el, modal, closed, open_modal;
 
   el = document.querySelectorAll("#grid ul li");
   modal = document.querySelector(".bc-modal");
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", e => {
     let title = this.dataset.title;
     let director = this.dataset.director;
     let date = this.dataset.date;
+
     let type = this.dataset.type;
     modal.classList.add("modale-active"); /* ajouter la classe active */
     /* sélectionner les sélecteurs html*/
